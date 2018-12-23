@@ -70,7 +70,7 @@ compile:
 lay:
 	-mkdir lay
 
-test: lay
+demo: lay
 	cd lay; ${PROG} ${CICDIR}/lay/SAR_ESSCIRC16_28N.cic ../../ciccreator/examples/tech.json  SAR ${OPT}	
 
 
@@ -79,6 +79,7 @@ clean:
 
 
 help:
-	@echo " make               Compile cic2skill"
+	@echo " make               Compile cic2verilog"
+	@echo " make      demo 	   Demonstrate usage"
 
 
